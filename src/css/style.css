@@ -1,7 +1,44 @@
-nav {
-    
+body {
+    font-family: -apple-system, "system-ui", Helvetica, Arial, sans-serif;
 }
 
-main {
-    margin-left: 200px;
+.container {
+    display: flex;
+}
+
+.main-nav {
+    position: fixed;
+    width: 10%;
+    height: 100%;
+    background-color: rgb(233, 233, 233);
+    overflow: auto;
+}
+
+.main-nav__list {
+    padding: 0;
+}
+
+.main-nav__item {
+    list-style-type: none;
+}
+
+.main-nav__link {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: rgb(1, 1, 1);
+}
+
+.main-nav__link--active {
+    background-color: rgba(125, 218, 63, 0.932);
+    color: rgb(255, 255, 255);
+}
+
+.main-nav__link:hover:not(.main-nav__link--active) {
+    background-color: rgb(85, 85, 85);
+    color: rgb(255, 255, 255);
+}
+
+.main-content {
+    margin-left: 10%;
 }
